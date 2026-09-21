@@ -220,7 +220,8 @@ function writeVersionPages(grouped, orderedDesc) {
 
   const known = new Set(orderedDesc);
   for (const existing of fs.readdirSync(VERSIONS_DIR)) {
-    if (!known.has(existing)) {
+    // 只清理形如版本号的过期目录，手写文件（如 INDEX.md、.assets/）原样保留。
+    if (VERSION_PATTERN.test(existing) && !known.has(existing)) {
       fs.rmSync(path.join(VERSIONS_DIR, existing), { recursive: true, force: true });
     }
   }

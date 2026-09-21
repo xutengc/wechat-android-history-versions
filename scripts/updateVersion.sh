@@ -4,6 +4,9 @@
 # 默认关闭：本仓库只收录官方下载地址，不托管安装包。
 PUBLISH_APK_RELEASE="${PUBLISH_APK_RELEASE:-0}"
 
+# 任一步骤失败立即以非零码退出，避免带着未生成的页面上游提交。
+set -euo pipefail
+
 function setup_git() {
     git config --global user.email "actions@github.com"
     git config --global user.name "GithubActions"
@@ -20,10 +23,9 @@ function check_update() {
 
 function wechat_download() {
     mkdir -p wechatAndroid
-    wget -q "$download_link" -O wechatAndroid/$file_name
-    if [ "$?" -ne 0 ]; then
+    if ! wget -q "$download_link" -O "wechatAndroid/$file_name"; then
         >&2 echo -e "Download Failed, please check your network!"
-        exit
+        exit 1
     fi
     prepare_commit
 }
