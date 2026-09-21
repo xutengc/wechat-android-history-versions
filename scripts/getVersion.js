@@ -1,7 +1,6 @@
 const fs = require('fs').promises;
 
 const url = 'https://weixin.qq.com/updates';
-const readmeFilePath = './README.md';
 const versionFilePath = './version.json';
 
 async function get(url) {
@@ -14,9 +13,8 @@ async function get(url) {
             const updateData = await updateResp.text();
             const updateInfo = getUpdateInfo(updateData);
             if (updateInfo) {
-                const added = await updateREADME(updateInfo);
                 const versionAdded = await updateVersionFile(updateInfo);
-                if (added || versionAdded) {
+                if (versionAdded) {
                     console.log(`${updateInfo.version_info}|${updateInfo.url}|${updateInfo.version}|${updateInfo.fileName}`);
                 }
             }
@@ -26,28 +24,8 @@ async function get(url) {
     }
 }
 
-async function updateREADME(updateInfo) {
-    try {
-        const data = await fs.readFile(readmeFilePath, 'utf8');
-        if (data.includes(updateInfo.url)) {
-            return false;
-        }
-
-        const lines = data.split('\n');
-        const tableHeaderIndex = lines.findIndex(line =>
-            line.includes('|  :----  | :----  | :----  |')
-        );
-
-        if (tableHeaderIndex !== -1) {
-            lines.splice(tableHeaderIndex + 1, 0, updateInfo.text);
-            await fs.writeFile(readmeFilePath, lines.join('\n'), 'utf8');
-            return true;
-        }
-    } catch (error) {
-        console.error('更新 README 文件时出错:', error);
-    }
-    return false;
-}
+// README.md / README.zh-CN.md 的表格主体由 scripts/genVersionPages.js 从 version.json 统一生成，
+// 这里只负责写入 version.json，避免把单一语言的表格行注入到另一种语言的 README 中。
 
 async function updateVersionFile(updateInfo) {
     try {
@@ -95,7 +73,6 @@ function getUpdateInfo(jsonStr) {
     try {
         const data = JSON.parse(jsonStr);
         return {
-            text: `| 微信 ${data.version} for Android  | (${data.publishDate}) | [${data.downloadUrl}](${data.downloadUrl}) |`,
             version_info: `微信 ${data.version} for Android`,
             url: data.downloadUrl,
             fileName: data.downloadUrl.split('/').pop(),

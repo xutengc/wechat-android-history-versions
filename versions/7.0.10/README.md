@@ -1,24 +1,26 @@
-# 微信 7.0.10 for Android
+# WeChat 7.0.10 for Android
 
-微信安卓版 **7.0.10** 官方安装包下载地址，所有下载链接均来自微信官网。
+**English** · [简体中文](README.zh-CN.md)
 
-- **软件版本**：7.0.10
-- **发布日期**：2019-12-26
-- **安装包数量**：1
-- **适用平台**：Android
+Official download links for WeChat for Android **7.0.10**. All links point to Tencent's official servers.
 
-## 下载地址
+- **Version**: 7.0.10
+- **Release date**: 2019-12-26
+- **Packages**: 1
+- **Platform**: Android
 
-| 安装包文件名 | 发布日期 | 下载地址 |
+## Downloads
+
+| Package | Release date | Download |
 |  :----  | :----  | :----  |
-| `weixin7010android1580.apk` | 2019-12-26 | [下载](https://dldir1.qq.com/weixin/android/weixin7010android1580.apk) |
+| `weixin7010android1580.apk` | 2019-12-26 | [Download](https://dldir1.qq.com/weixin/android/weixin7010android1580.apk) |
 
-## 其他版本
+## Other versions
 
-- 更新版本：[微信 7.0.11 for Android](../7.0.11/)
-- 更早版本：[微信 7.0.9 for Android](../7.0.9/)
-- [← 返回全部历史版本列表](../../README.md)
+- Newer: [WeChat 7.0.11 for Android](../7.0.11/)
+- Older: [WeChat 7.0.9 for Android](../7.0.9/)
+- [← Back to all versions](../../README.md)
 
 ---
 
-本版本更新日志可参见官网 [changelog](https://weixin.qq.com/updates)。本仓库仅收录官方下载地址，不托管安装包文件。
+Release notes for this version are available on the official [changelog](https://weixin.qq.com/updates). This repository only catalogues official download links and does not host any APK files.

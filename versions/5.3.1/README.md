@@ -1,24 +1,26 @@
-# 微信 5.3.1 for Android
+# WeChat 5.3.1 for Android
 
-微信安卓版 **5.3.1** 官方安装包下载地址，所有下载链接均来自微信官网。
+**English** · [简体中文](README.zh-CN.md)
 
-- **软件版本**：5.3.1
-- **发布日期**：2014-06-27
-- **安装包数量**：1
-- **适用平台**：Android
+Official download links for WeChat for Android **5.3.1**. All links point to Tencent's official servers.
 
-## 下载地址
+- **Version**: 5.3.1
+- **Release date**: 2014-06-27
+- **Packages**: 1
+- **Platform**: Android
 
-| 安装包文件名 | 发布日期 | 下载地址 |
+## Downloads
+
+| Package | Release date | Download |
 |  :----  | :----  | :----  |
-| `weixin531android460.apk` | 2014-06-27 | [下载](https://dldir1.qq.com/weixin/android/weixin531android460.apk) |
+| `weixin531android460.apk` | 2014-06-27 | [Download](https://dldir1.qq.com/weixin/android/weixin531android460.apk) |
 
-## 其他版本
+## Other versions
 
-- 更新版本：[微信 5.4 for Android](../5.4/)
-- 更早版本：无（已是最早收录版本）
-- [← 返回全部历史版本列表](../../README.md)
+- Newer: [WeChat 5.4 for Android](../5.4/)
+- Older: none — earliest release on record
+- [← Back to all versions](../../README.md)
 
 ---
 
-本版本更新日志可参见官网 [changelog](https://weixin.qq.com/updates)。本仓库仅收录官方下载地址，不托管安装包文件。
+Release notes for this version are available on the official [changelog](https://weixin.qq.com/updates). This repository only catalogues official download links and does not host any APK files.

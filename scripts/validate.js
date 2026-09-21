@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const readmeFilePath = './README.md';
+const readmeFilePaths = ['./README.md', './README.zh-CN.md'];
 const versionFilePath = './version.json';
 
 function extractUrlsFromReadme(content) {
@@ -31,11 +31,14 @@ function findDuplicateUrls(urls, label) {
 }
 
 function main() {
-    const readme = fs.readFileSync(readmeFilePath, 'utf8');
+    const readmeErrors = readmeFilePaths.flatMap((filePath) => {
+        const content = fs.readFileSync(filePath, 'utf8');
+        return findDuplicateUrls(extractUrlsFromReadme(content), `${filePath} 重复 URL`);
+    });
     const versionEntries = JSON.parse(fs.readFileSync(versionFilePath, 'utf8'));
     const errors = [
         ...findDuplicateUrls(versionEntries.map(entry => entry.url), 'version.json 重复 URL'),
-        ...findDuplicateUrls(extractUrlsFromReadme(readme), 'README.md 重复 URL')
+        ...readmeErrors
     ];
 
     if (errors.length > 0) {

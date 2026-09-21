@@ -1,24 +1,26 @@
-# 微信 8.0.23 for Android
+# WeChat 8.0.23 for Android
 
-微信安卓版 **8.0.23** 官方安装包下载地址，所有下载链接均来自微信官网。
+**English** · [简体中文](README.zh-CN.md)
 
-- **软件版本**：8.0.23
-- **发布日期**：2022-05-26
-- **安装包数量**：1
-- **适用平台**：Android
+Official download links for WeChat for Android **8.0.23**. All links point to Tencent's official servers.
 
-## 下载地址
+- **Version**: 8.0.23
+- **Release date**: 2022-05-26
+- **Packages**: 1
+- **Platform**: Android
 
-| 安装包文件名 | 发布日期 | 下载地址 |
+## Downloads
+
+| Package | Release date | Download |
 |  :----  | :----  | :----  |
-| `weixin8023android2160.apk` | 2022-05-26 | [下载](https://dldir1.qq.com/weixin/android/weixin8023android2160.apk) |
+| `weixin8023android2160.apk` | 2022-05-26 | [Download](https://dldir1.qq.com/weixin/android/weixin8023android2160.apk) |
 
-## 其他版本
+## Other versions
 
-- 更新版本：[微信 8.0.24 for Android](../8.0.24/)
-- 更早版本：[微信 8.0.22 for Android](../8.0.22/)
-- [← 返回全部历史版本列表](../../README.md)
+- Newer: [WeChat 8.0.24 for Android](../8.0.24/)
+- Older: [WeChat 8.0.22 for Android](../8.0.22/)
+- [← Back to all versions](../../README.md)
 
 ---
 
-本版本更新日志可参见官网 [changelog](https://weixin.qq.com/updates)。本仓库仅收录官方下载地址，不托管安装包文件。
+Release notes for this version are available on the official [changelog](https://weixin.qq.com/updates). This repository only catalogues official download links and does not host any APK files.

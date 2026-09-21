@@ -40,13 +40,13 @@ function prepare_commit() {
 }
 
 function main() {
-    now_sum256=`shasum -a 256 README.md | awk '{print $1}'`
+    now_sum256=`shasum -a 256 version.json | awk '{print $1}'`
     setup_git
     check_update    
-    latest_sum256=`shasum -a 256 README.md | awk '{print $1}'`
+    latest_sum256=`shasum -a 256 version.json | awk '{print $1}'`
     if [ "$now_sum256" != "$latest_sum256" ]; then
         node scripts/genVersionPages.js
-        git add README.md version.json versions && git commit -m "$version_info" && git push origin main
+        git add README.md README.zh-CN.md version.json versions && git commit -m "$version_info" && git push origin main
         if [ "$PUBLISH_APK_RELEASE" = "1" ]; then
             wechat_download
         fi
