@@ -15,10 +15,10 @@ function setup_git() {
 function check_update() {
     wechat_info=`node scripts/getVersion.js`
     IFS="|" read -ra parts <<< "$wechat_info"
-    version_info="${parts[0]}"
-    download_link="${parts[1]}"
-    version="${parts[2]}"
-    file_name="${parts[3]}"
+    version_info="${parts[0]:-}"
+    download_link="${parts[1]:-}"
+    version="${parts[2]:-}"
+    file_name="${parts[3]:-}"
 }
 
 function wechat_download() {
