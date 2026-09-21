@@ -1,9 +1,12 @@
 #!/bin/bash
 
-function gh_login() {
-    gh auth login --with-token $GHTOKEN
+# 设为 1 时，检测到新版本会额外下载 APK 并创建 GitHub Release。
+# 默认关闭：本仓库只收录官方下载地址，不托管安装包。
+PUBLISH_APK_RELEASE="${PUBLISH_APK_RELEASE:-0}"
+
+function setup_git() {
     git config --global user.email "actions@github.com"
-    git config --global user.name "GithubActions"    
+    git config --global user.name "GithubActions"
 }
 
 function check_update() {
@@ -38,13 +41,15 @@ function prepare_commit() {
 
 function main() {
     now_sum256=`shasum -a 256 README.md | awk '{print $1}'`
-    gh_login
+    setup_git
     check_update    
     latest_sum256=`shasum -a 256 README.md | awk '{print $1}'`
     if [ "$now_sum256" != "$latest_sum256" ]; then
         node scripts/genVersionPages.js
         git add README.md version.json versions && git commit -m "$version_info" && git push origin main
-        wechat_download
+        if [ "$PUBLISH_APK_RELEASE" = "1" ]; then
+            wechat_download
+        fi
     fi        
 }
 
