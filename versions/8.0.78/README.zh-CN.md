@@ -18,7 +18,7 @@
 
 ## 其他版本
 
-- 更新版本: 无（已是最新版本）
+- 更新版本: [微信 8.0.79 for Android](../8.0.79/README.zh-CN.md)
 - 更早版本: [微信 8.0.77 for Android](../8.0.77/README.zh-CN.md)
 - [← 返回全部历史版本列表](../../README.zh-CN.md)
 

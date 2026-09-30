@@ -18,7 +18,7 @@ Official download links for WeChat for Android **8.0.78**. All links point to Te
 
 ## Other versions
 
-- Newer: none — this is the latest release
+- Newer: [WeChat 8.0.79 for Android](../8.0.79/)
 - Older: [WeChat 8.0.77 for Android](../8.0.77/)
 - [← Back to all versions](../../README.md)
 
