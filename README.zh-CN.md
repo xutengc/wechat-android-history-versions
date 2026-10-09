@@ -20,6 +20,7 @@
 
 | 软件版本  | 发布日期  | 下载地址  |
 |  :----  | :----  | :----  |
+| [微信 8.0.79 for Android](versions/8.0.79/README.zh-CN.md)  | (2026-09-30) | [https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64_1.apk](https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64_1.apk) |
 | [微信 8.0.79 for Android](versions/8.0.79/README.zh-CN.md)  | (2026-09-30) | [https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64.apk) |
 | [微信 8.0.78 for Android](versions/8.0.78/README.zh-CN.md)  | (2026-09-09) | [https://dldir1v6.qq.com/weixin/android/weixin8078android3180_0x28004e32_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8078android3180_0x28004e32_arm64.apk) |
 | [微信 8.0.78 for Android](versions/8.0.78/README.zh-CN.md)  | (2026-09-09) | [https://dldir1v6.qq.com/weixin/android/weixin8078android3180_0x28004e30_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8078android3180_0x28004e30_arm64.apk) |

@@ -6,13 +6,14 @@
 
 - **软件版本**: 8.0.79
 - **发布日期**: 2026-09-30
-- **安装包数量**: 1
+- **安装包数量**: 2
 - **适用平台**: Android
 
 ## 下载地址
 
 | 安装包文件名 | 发布日期 | 下载地址 |
 |  :----  | :----  | :----  |
+| `weixin8079android3200_0x28004f30_arm64_1.apk` | 2026-09-30 | [下载](https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64_1.apk) |
 | `weixin8079android3200_0x28004f30_arm64.apk` | 2026-09-30 | [下载](https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64.apk) |
 
 ## 其他版本

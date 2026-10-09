@@ -6,13 +6,14 @@ Official download links for WeChat for Android **8.0.79**. All links point to Te
 
 - **Version**: 8.0.79
 - **Release date**: 2026-09-30
-- **Packages**: 1
+- **Packages**: 2
 - **Platform**: Android
 
 ## Downloads
 
 | Package | Release date | Download |
 |  :----  | :----  | :----  |
+| `weixin8079android3200_0x28004f30_arm64_1.apk` | 2026-09-30 | [Download](https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64_1.apk) |
 | `weixin8079android3200_0x28004f30_arm64.apk` | 2026-09-30 | [Download](https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64.apk) |
 
 ## Other versions

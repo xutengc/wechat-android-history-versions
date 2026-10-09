@@ -18,6 +18,7 @@ Every release has its own directory under [`versions/`](versions/), named after 
 
 | Version | Release date | Download |
 |  :----  | :----  | :----  |
+| [WeChat 8.0.79 for Android](versions/8.0.79/)  | (2026-09-30) | [https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64_1.apk](https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64_1.apk) |
 | [WeChat 8.0.79 for Android](versions/8.0.79/)  | (2026-09-30) | [https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8079android3200_0x28004f30_arm64.apk) |
 | [WeChat 8.0.78 for Android](versions/8.0.78/)  | (2026-09-09) | [https://dldir1v6.qq.com/weixin/android/weixin8078android3180_0x28004e32_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8078android3180_0x28004e32_arm64.apk) |
 | [WeChat 8.0.78 for Android](versions/8.0.78/)  | (2026-09-09) | [https://dldir1v6.qq.com/weixin/android/weixin8078android3180_0x28004e30_arm64.apk](https://dldir1v6.qq.com/weixin/android/weixin8078android3180_0x28004e30_arm64.apk) |
